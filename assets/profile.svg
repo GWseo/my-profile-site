@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="서규원 아바타">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="25%" r="90%">
+      <stop offset="0" stop-color="#2a3396"/>
+      <stop offset="1" stop-color="#0b1038"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0cf8c"/>
+      <stop offset="1" stop-color="#c8963f"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" fill="url(#bg)"/>
+  <!-- constellation -->
+  <g stroke="#9fb0ff" stroke-opacity=".35" stroke-width="1" fill="none">
+    <path d="M24 40 L62 24 L96 46 M178 30 L214 58 L196 96 M30 190 L58 214 L96 200 M200 196 L220 168"/>
+  </g>
+  <g fill="#cfd8ff" fill-opacity=".8">
+    <circle cx="24" cy="40" r="2"/><circle cx="62" cy="24" r="2.4"/><circle cx="96" cy="46" r="1.8"/>
+    <circle cx="178" cy="30" r="1.8"/><circle cx="214" cy="58" r="2.4"/><circle cx="196" cy="96" r="1.8"/>
+    <circle cx="30" cy="190" r="1.8"/><circle cx="58" cy="214" r="2.4"/><circle cx="96" cy="200" r="1.8"/>
+    <circle cx="200" cy="196" r="2"/><circle cx="220" cy="168" r="1.8"/>
+  </g>
+  <!-- security shield -->
+  <path d="M120 42 L174 62 V116 C174 150 152 174 120 190 C88 174 66 150 66 116 V62 Z"
+        fill="#0d1240" stroke="url(#gold)" stroke-width="3"/>
+  <path d="M120 54 L164 70 V116 C164 143 147 163 120 177 C93 163 76 143 76 116 V70 Z"
+        fill="none" stroke="#d4a85a" stroke-opacity=".3" stroke-width="1"/>
+  <!-- code brackets -->
+  <g fill="none" stroke="#8ea2ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M92 94 L76 116 L92 138"/>
+    <path d="M148 94 L164 116 L148 138"/>
+  </g>
+  <!-- initial -->
+  <text x="120" y="134" text-anchor="middle" font-family="Pretendard, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif"
+        font-size="56" font-weight="700" fill="url(#gold)">서</text>
+  <!-- AI nodes -->
+  <g fill="#d4a85a">
+    <circle cx="104" cy="206" r="3"/><circle cx="120" cy="212" r="3"/><circle cx="136" cy="206" r="3"/>
+  </g>
+</svg>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>서규원 | Profile</title>
+  <meta name="description" content="서규원 - 한국주택금융공사 AI전략실 스마트워크플랫폼팀 포털그룹웨어 AI 연계 담당자" />
+  <meta name="theme-color" content="#080b2a" />
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        fontFamily: {
+          sans: ['Pretendard', 'system-ui', 'sans-serif'],
+        },
+        colors: { navy: '#080b2a', gold: '#d4a85a', cream: '#f1ece4' }
+      } }
+    };
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="font-sans bg-navy text-cream/90 antialiased">
+  <div id="progress" class="fixed top-0 left-0 h-0.5 w-0 bg-gold z-[60]"></div>
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <!-- Header -->
+  <header id="header" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+    <div class="max-w-md mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="#home" class="font-bold text-xl text-cream tracking-tight">서규원<span class="text-gold">.</span></a>
+      <nav class="hidden md:flex items-center" aria-label="주 메뉴">
+        <a href="#home" class="nav-link">홈</a>
+        <a href="#about" class="nav-link">소개</a>
+        <a href="#skills" class="nav-link">기술 스택</a>
+        <a href="#contact" class="nav-link">연락처</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden p-2 -mr-2 text-cream" aria-label="메뉴 열기" aria-expanded="false">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-white/10 bg-navy/95 backdrop-blur px-4 py-2 flex-col">
+      <a href="#home" class="nav-link block">홈</a>
+      <a href="#about" class="nav-link block">소개</a>
+      <a href="#skills" class="nav-link block">기술 스택</a>
+      <a href="#contact" class="nav-link block">연락처</a>
+    </div>
+  </header>
+
+  <main class="max-w-md mx-auto px-4">
+    <!-- Hero -->
+    <section id="home" class="pt-24 pb-8 md:pt-32 md:pb-10 text-center">
+      <div class="reveal flex justify-center">
+        <div class="avatar">
+          <img src="assets/profile.jpg" alt="서규원 프로필 사진" onerror="this.onerror=null;this.src='assets/profile.svg'" class="absolute inset-0 w-full h-full object-cover" />
+          
+        </div>
+      </div>
+      <h1 class="reveal mt-6 font-bold text-4xl sm:text-5xl text-cream tracking-tight" style="--d:100ms">서규원</h1>
+      <p class="reveal mt-4 text-base sm:text-lg leading-relaxed text-cream/85" style="--d:200ms">
+        한국주택금융공사 AI전략실<br />
+        스마트워크플랫폼팀에서<br />
+        포털그룹웨어 AI 연계를 담당합니다.
+      </p>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <p class="label reveal">소개</p>
+      <p class="reveal mt-3 leading-relaxed text-cream/80" style="--d:80ms">
+        정보컴퓨터공학을 전공하고 정보보안으로 석사를 마쳤습니다. 지금은 공공 금융 현장에서 그룹웨어와 AI를 연결하는 일을 하고 있습니다.
+      </p>
+      <ul class="mt-5 space-y-3">
+        <li class="card reveal" style="--d:0ms"><h3>부산대학교</h3><p>정보컴퓨터공학 학사 졸업</p></li>
+        <li class="card reveal" style="--d:100ms"><h3>대학원</h3><p>전기전자컴퓨터공학 석사 · 정보보안</p></li>
+        <li class="card reveal" style="--d:200ms"><h3>삼성 소프트웨어 멤버십</h3><p>23-2기</p></li>
+        <li class="card reveal" style="--d:300ms"><h3>한국주택금융공사<span class="now">NOW</span></h3><p>AI전략실 스마트워크플랫폼팀 · 재직 중</p></li>
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <p class="label reveal">기술 스택</p>
+      <div class="mt-5 grid grid-cols-4 gap-2 sm:gap-3">
+        <div class="skill reveal" style="--d:0ms" title="C"><i class="devicon-c-plain colored"></i><span>C</span></div>
+        <div class="skill reveal" style="--d:100ms" title="Python"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+        <div class="skill reveal" style="--d:200ms" title="Java"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+        <div class="skill reveal" style="--d:300ms" title="Oracle SQL"><i class="devicon-oracle-original colored"></i><span>Oracle SQL</span></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <p class="label reveal">연락처</p>
+      <div class="mt-5 flex flex-col gap-6">
+        <a href="https://github.com/GWseo" target="_blank" rel="noopener noreferrer" class="link-card reveal" style="--d:0ms">
+          <div class="flex items-center justify-between">
+            <h3>GitHub</h3><span class="arrow">→</span>
+          </div>
+          <p>코드와 작업물을 모아둔 저장소입니다.</p>
+          <small>github.com/GWseo</small>
+        </a>
+        <a href="https://www.linkedin.com/in/dennis-gyuwon-seo-572757114/" target="_blank" rel="noopener noreferrer" class="link-card reveal" style="--d:100ms">
+          <div class="flex items-center justify-between">
+            <h3>LinkedIn</h3><span class="arrow">→</span>
+          </div>
+          <p>경력과 프로필을 확인할 수 있습니다.</p>
+          <small>linkedin.com/in/dennis-gyuwon-seo</small>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="max-w-md mx-auto px-4 pb-10 pt-4 text-center text-xs tracking-wide text-cream/40">
+    © 2026 서규원
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
